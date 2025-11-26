@@ -61,7 +61,7 @@ Everything runs locally. Zero cloud calls.
 ```
 edge-signtalk-real-time-sign-language-interpreter/
 │
-├── edge-impulse-sdk/            → Edge Impulse C++ SDK (auto-generated)
+├── edge-impulse-sdk/            → Edge Impulse C++ SDK 
 ├── model-parameters/            → EI project metadata
 │
 ├── tflite-model/
