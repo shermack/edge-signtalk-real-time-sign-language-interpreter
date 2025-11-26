@@ -157,7 +157,6 @@ Was planned but cut due to hackathon timing.
 - Two-hand letters (“H”, “K”, “R”)
 - Dynamic signs (e.g., “J” movement)
 - Text-to-speech sentence reading
-- Android/iOS mobile app
 - Edge TPU acceleration (Coral)
 
 ---
