@@ -95,12 +95,6 @@ pip install -r requirements.txt
 python silent_voice.py
 ```
 
-### 4. Optional — run the minimal raw TFLite test  
-```bash
-python run_interpreter.py
-```
-
----
 
 # 🧩 How It Works
 
@@ -154,7 +148,7 @@ Was planned but cut due to hackathon timing.
 
 # 🚀 Future Enhancements
 
-- Two-hand letters (“H”, “K”, “R”)
+- Two-hand letters (“H”, “K”, “R”) & sentence builders
 - Dynamic signs (e.g., “J” movement)
 - Text-to-speech sentence reading
 - Edge TPU acceleration (Coral)
