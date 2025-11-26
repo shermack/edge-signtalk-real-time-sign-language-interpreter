@@ -1,5 +1,7 @@
 🧠 Edge SignTalk: Real-Time Sign Language Interpreter
+
 Powered by Edge Impulse + TensorFlow Lite (INT8) with Holistic Hand Landmark UI
+
 <p align="center"> <img src="https://img.shields.io/badge/Platform-Edge%20Impulse-blue?style=for-the-badge"/> <img src="https://img.shields.io/badge/Model-TensorFlow%20Lite%20(INT8)-green?style=for-the-badge"/> <img src="https://img.shields.io/badge/UI-PyQt5-purple?style=for-the-badge"/> <img src="https://img.shields.io/badge/Language-Python%203.10-yellow?style=for-the-badge"/> </p>
 🔥 Overview
 
@@ -13,15 +15,15 @@ PyQt5 desktop interface
 
 MediaPipe skeleton/hand overlays for visual clarity
 
-Camera cropping pipeline ensuring the model receives clean hand-only inputs
+Camera cropping pipeline ensuring clean hand-only inputs
 
-Designed for speed, privacy, and offline use, Edge SignTalk runs on-device without internet, making it suitable for:
+Designed for speed, privacy, and offline use, Edge SignTalk runs fully on-device without internet, making it suitable for:
 
 Deaf / hard-of-hearing communication
 
 Inclusive classrooms
 
-Hospitals, public service desks
+Hospitals & public service desks
 
 Remote regions with limited connectivity
 
@@ -48,7 +50,7 @@ Camera dropdown selector (supports Iriun, USB, webcam)
 
 Start/stop camera button
 
-Real-time predicted letter
+Real-time predicted letter display
 
 Sentence builder (optional extension)
 
@@ -56,13 +58,14 @@ Smooth prediction with temporal filtering
 
 ✔ Runs Fully Offline
 
-All inference done locally.
+All inference is performed locally.
 
 📂 Repository Structure
 edge-signtalk-real-time-sign-language-interpreter/
 │
 ├── edge-impulse-sdk/            → Edge Impulse C++ SDK (auto-generated)
 ├── model-parameters/            → Metadata from Edge Impulse
+│
 ├── tflite-model/
 │   ├── model.tflite             → INT8 model (main classifier)
 │   ├── labels.txt               → 28 ASL classes
@@ -114,30 +117,28 @@ Only stable poses result in a predicted letter
 
 5. UI displays predicted letter + overlays landmarks
 
-Users see both the classification and skeletal hand visualization.
+Users see both:
+
+The classification
+
+The skeletal hand visualization
 
 📊 Model Summary
-
-Model type: Image Classification (Transfer Learning)
-
-Input: 96 × 96 (grayscale)
-
-Output: 28 ASL letters
-
-Quantization: INT8 (fully quantized)
-
-Test accuracy: 95.86%
-
-Dataset source: Custom hand ASL dataset + Edge Impulse test tool
-
+Property	Value
+Model type	Image Classification (Transfer Learning)
+Input	96 × 96 (grayscale)
+Output	28 ASL letters
+Quantization	INT8 (fully quantized)
+Test accuracy	95.86%
+Dataset	Custom ASL dataset + Edge Impulse test tool
 🧪 Known Limitations & Future Work
 🔹 Single-hand only
 
-Adding two-hand support requires a different dataset.
+Two-hand support requires a different dataset.
 
 🔹 Lighting conditions
 
-While robust, extreme darkness can reduce accuracy.
+Extreme darkness can reduce accuracy.
 
 🔹 Sentence Builder Mode
 
@@ -153,7 +154,7 @@ Voice synthesis of predicted sentences
 
 Mobile Android/iOS deployment
 
-Edge TPU version (Coral USB / Coral DevBoard)
+Edge TPU version (Coral USB / DevBoard)
 
 📝 License
 
@@ -161,13 +162,13 @@ MIT License — free for commercial and research use.
 
 👤 Author
 
-Shermack salat
+Shermack Salat
 Nairobi, Kenya
 
 🤝 Acknowledgements
 
-Edge Impulse (training pipeline & model optimization)
+Edge Impulse — training pipeline & model optimization
 
-MediaPipe (hand tracking)
+MediaPipe — hand tracking
 
-TensorFlow Lite (on-device inference)
+TensorFlow Lite — on-device inference
