@@ -1,0 +1,5 @@
+numpy
+opencv-python
+PyQt5
+mediapipe
+tensorflow==2.12.0
