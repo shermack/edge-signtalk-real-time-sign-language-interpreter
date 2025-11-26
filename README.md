@@ -61,7 +61,6 @@ Smooth prediction with temporal filtering
 All inference is performed locally.
 
 📂 Repository Structure
-
 edge-signtalk-real-time-sign-language-interpreter/
 │
 ├── edge-impulse-sdk/            → Edge Impulse C++ SDK (auto-generated)
