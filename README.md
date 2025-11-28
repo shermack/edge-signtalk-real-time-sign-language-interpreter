@@ -52,7 +52,8 @@ Dark-theme hackathon-friendly UI with:
 - Temporal smoothing (prevents jitter)
 
 ### ✔ 100% Offline  
-Everything runs locally. Zero cloud calls.
+Everything runs locally. Zero cloud calls (using python script UI)
+Runs on both android and ios
 
 ---
 
